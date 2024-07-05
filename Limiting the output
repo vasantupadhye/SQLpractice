@@ -1,0 +1,5 @@
+SELECT  emp_name,
+       order_num,
+      cust_id  
+FROM oliveoil.sales
+LIMIT 10;
