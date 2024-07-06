@@ -1,0 +1,2 @@
+SELECT COUNT(*) AS emp_name
+FROM oliveoil.sales;
