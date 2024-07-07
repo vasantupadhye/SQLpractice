@@ -1,3 +1,11 @@
+#by column number
 SELECT *
 FROM oliveoil.sales
 ORDER BY 4 DESC;
+
+#by multiple column name
+SELECT *
+FROM oliveoil.sales
+ORDER BY cust_id
+         emp_name;
+
