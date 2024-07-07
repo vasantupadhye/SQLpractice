@@ -1,0 +1,3 @@
+SELECT *
+FROM oliveoil.sales
+ORDER BY cust_id desc;
