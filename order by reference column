@@ -6,6 +6,6 @@ ORDER BY 4 DESC;
 #by multiple column name
 SELECT *
 FROM oliveoil.sales
-ORDER BY cust_id
-         emp_name;
+ORDER BY cust_id ASC,
+         emp_name DESC;
 
