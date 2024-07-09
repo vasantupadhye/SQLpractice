@@ -1,0 +1,8 @@
+SELECT prod_category,
+       order_total,
+       emp_name,
+       order_num
+FROM oliveoil.sales
+WHERE prod_category != 'Bath_products' , 'olive oil'
+ORDER BYE produ_category DESC
+LIMIT 5;
