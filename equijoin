@@ -1,0 +1,10 @@
+
+SELECT job_title,
+      COUNT (DISTINCT emp_id) AS employee,
+      SUM ('order total') AS total_order
+FROM oliveoil.employees,
+     oliveoil.sales
+WHERE oliveoil.sales.emp_id = oliveoil.employees.id
+GROUP BY job_title
+ORDER BY total_order DESC;
+     
