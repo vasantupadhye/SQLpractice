@@ -1,0 +1,7 @@
+SELECT cust_state,
+       SUM (order_total) AS sum_of_order,
+       COUNT (*) AS order_total,
+       AVG (order_total) AS avg_total
+FROM oliveoil.sales 
+GROUP BY cust_state
+ORDER BY sum_of_order DESC;     
