@@ -1,0 +1,13 @@
+SELECT order_num,
+       cust_type,
+       prod_category,
+       order_total
+FROM oliveoil.sales
+where cust_type = "Business"
+union all
+select order_num,
+       cust_type,
+       prod_category,
+       order_total
+from oliveoil.sales
+where prod_category = " oliveoil "       
