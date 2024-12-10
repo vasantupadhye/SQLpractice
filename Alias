@@ -1,4 +1,6 @@
-/*column name will display by the name alias*/
+/*
+column name will display by the name alias
+*/
 SELECT 
    FirstName AS 'Customer name',
    LastName AS [customer lastname],
