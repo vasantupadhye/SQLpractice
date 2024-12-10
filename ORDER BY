@@ -12,4 +12,5 @@ SELECT
 FROM
    Customer
 ORDER BY 
-   FirstName ASC;   
+   FirstName ASC,
+   Lastname DESC;   
