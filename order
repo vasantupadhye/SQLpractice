@@ -1,3 +1,15 @@
 SELECT *
-FROM oliveoil.sales
-ORDER BY cust_id desc;
+FROM 
+    oliveoil.sales
+ORDER BY 
+    cust_id desc;
+
+
+SELECT 
+   FirstName AS 'Customer name',
+   LastName AS [customer lastname],
+   Email AS EMAIL
+FROM
+   Customer
+ORDER BY 
+   FirstName ASC;   
