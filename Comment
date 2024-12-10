@@ -1,0 +1,11 @@
+/*
+this is first comment
+Create date:10-12-2024
+ this query displays FirstName,LastName and email from Customer table
+*/
+SELECT 
+   FirstName,
+   LastName,
+   Email
+FROM
+   Customer;
