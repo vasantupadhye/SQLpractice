@@ -1,0 +1,7 @@
+/*column name will display by the name alias*/
+SELECT 
+   FirstName AS 'Customer name',
+   LastName AS [customer lastname],
+   Email AS EMAIL
+FROM
+   Customer;
