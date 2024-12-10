@@ -1,0 +1,20 @@
+#1
+SELECT  
+   emp_name,
+   order_num,
+   cust_id  
+FROM 
+    oliveoil.sales
+LIMIT 10;
+
+
+#2
+SELECT 
+   FirstName AS 'Customer name',
+   LastName AS [customer lastname],
+   Email AS EMAIL
+FROM
+   Customer
+ORDER BY 
+   FirstName ASC
+LIMIT 10;   
