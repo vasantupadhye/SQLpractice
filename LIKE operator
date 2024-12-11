@@ -1,0 +1,25 @@
+--this query returns city name starting with B
+SELECT
+  BillingAddress,
+  InvoiceDate,
+  BillingCity,
+  total
+FROM 
+  Invoice
+WHERE  
+  BillingCity LIKE 'B%'
+ORDER by 
+  InvoiceDate;  
+
+--this query will return name which has 'B' in it anywhere
+SELECT
+  BillingAddress,
+  InvoiceDate,
+  BillingCity,
+  total
+FROM 
+  Invoice
+WHERE  
+  BillingCity LIKE '%B%'
+ORDER by 
+  InvoiceDate;  
