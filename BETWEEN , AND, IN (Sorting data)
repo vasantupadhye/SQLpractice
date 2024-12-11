@@ -1,3 +1,4 @@
+#1
 SELECT
   BillingAddress,
   InvoiceDate,
@@ -18,5 +19,20 @@ FROM
   Invoice
 WHERE  
   total IN (1.98,5.00)
+ORDER by 
+  InvoiceDate;  
+
+/*
+filtering Text data
+*/
+SELECT
+  BillingAddress,
+  InvoiceDate,
+  BillingCity,
+  total
+FROM 
+  Invoice
+WHERE  
+  BillingCity = 'Brussels'
 ORDER by 
   InvoiceDate;  
