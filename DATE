@@ -1,0 +1,11 @@
+SELECT
+  BillingAddress,
+  InvoiceDate,
+  BillingCity,
+  total
+FROM 
+  Invoice
+WHERE  
+ DATE (InvoiceDate) = '2009-02-02'
+ORDER by 
+  InvoiceDate;  
