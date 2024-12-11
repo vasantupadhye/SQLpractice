@@ -1,2 +1,4 @@
-SELECT emp_name
-FROM oliveoil.sales;
+SELECT
+   emp_name
+FROM
+   oliveoil.sales;
