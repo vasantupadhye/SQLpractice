@@ -12,3 +12,24 @@ ON
    c.CustomerId=I.CustomerId
 ORDER BY
    InvoiceId;
+
+#2
+SELECT
+   c.FirstName,
+   c.LastName,
+   e.EmployeeId,
+   e.FirstName,
+   e.LastName,
+   i.InvoiceId,
+   i.CustomerId,
+   i.total
+FROM
+   Customer as C
+INNER JOIN
+   Invoice AS I
+ON
+   c.CustomerId=I.CustomerId
+INNER JOIN
+   Employee AS E   
+ORDER BY
+   InvoiceId;
