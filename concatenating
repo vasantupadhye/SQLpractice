@@ -1,0 +1,10 @@
+--combining fields using ||
+SELECT 
+ FirstName,
+ LastName,
+ Address,
+ FirstName || ' '|| LastName||' '||Address
+FROM
+ Customer
+WHERE 
+ country = 'USA';
