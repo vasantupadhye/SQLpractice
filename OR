@@ -10,3 +10,21 @@ WHERE
    billingcity LIKE 'p%' OR billingcity LIKE 'D%'
 ORDER BY
     invoicedate;
+
+#2
+/*
+using brackets and multiple condition
+*/
+SELECT
+   billingadress,
+   billingcity,
+   invoicedate,
+   total
+FROM
+   invoice
+WHERE
+   total>1.98 AND (billingcity LIKE 'p%' OR billingcity LIKE 'D%')
+ORDER BY
+   Billingcity DESC;
+
+
