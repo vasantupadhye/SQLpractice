@@ -1,0 +1,12 @@
+#Using OR operator
+SELECT
+   billingcity,
+   billingadress,
+   invoicedate,
+   total
+FROM
+   invoice
+WHERE
+   billingcity LIKE 'p%' OR billingcity LIKE 'D%'
+ORDER BY
+    invoicedate;
