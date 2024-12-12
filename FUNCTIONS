@@ -1,0 +1,15 @@
+/*
+UPPER,LOWER,LENGTH functiona
+*/
+SELECT 
+ FirstName,
+ LastName,
+ Address,
+ FirstName || ' '|| LastName||' '||Address||','|| PostalCode,
+ length(lastname),
+ upper(FirstName) AS [allcaps],
+ lower(lastname) AS [lowercase]
+FROM
+ Customer
+WHERE 
+ country = 'USA';
