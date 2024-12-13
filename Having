@@ -1,0 +1,11 @@
+SELECT
+  BillingCity,
+  round(avg(total),2) AS [avg total]
+FROM
+  Invoice
+GROUP BY
+  BillingCity
+HAVING
+ avg(total)>5
+ORDER BY
+  BillingCity  
