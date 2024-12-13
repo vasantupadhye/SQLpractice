@@ -5,3 +5,13 @@ SELECT cust_state,
 FROM oliveoil.sales 
 GROUP BY cust_state
 ORDER BY sum_of_order DESC;     
+
+#2
+SELECT
+  SUM(total) AS [salestotal],
+  avg(total) AS [avgsales],
+  min(total) AS [minsales],
+  max(total) AS [maxsales],
+  COUNT(*) AS [salescount]
+FROM 
+  Invoice
