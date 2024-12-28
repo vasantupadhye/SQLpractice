@@ -24,7 +24,13 @@ WHERE
 ORDER by 
   InvoiceDate;  
 
-#pattern searching us '_'
+#this will return data wherever epic is presnt in column
+select title,
+description 
+from film 
+where description like '%epic%'
+
+#pattern searching us '_' (single character)
 select title,
 description 
 from film 
