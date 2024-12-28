@@ -10,7 +10,7 @@ WHERE
 ORDER by 
   InvoiceDate;  
 
-#using IN logical operator
+#using IN logical operator (this will return data listed)
 SELECT
   BillingAddress,
   InvoiceDate,
@@ -21,6 +21,12 @@ WHERE
   total IN (1.98,5.00)
 ORDER by 
   InvoiceDate;  
+
+#in2 (this will returns data listed and if the amount is greater than 5)
+select customer_id,amount,rental_id,payment_date
+from payment
+where amount > 5.00
+ AND customer_id IN (42,53,60,73)
 
 /*
 filtering Text data
