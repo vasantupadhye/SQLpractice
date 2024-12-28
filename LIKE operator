@@ -23,3 +23,9 @@ WHERE
   BillingCity LIKE '%B%'
 ORDER by 
   InvoiceDate;  
+
+#pattern searching us '_'
+select title,
+description 
+from film 
+where description like '_pic'
