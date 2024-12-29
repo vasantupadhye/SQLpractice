@@ -7,3 +7,14 @@ GROUP BY
   BillingCity
 ORDER BY
   BillingCity  
+
+--multiple grouping
+select
+rental_duration, 
+rating,  replacement_cost, 
+count(film_id) as films_this_rental_duration
+from 
+film 
+group by 
+rental_duration,
+rating,replacement_cost
