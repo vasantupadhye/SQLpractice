@@ -1,3 +1,14 @@
+--all_aggregate_functions
+ SELECT rating,
+ count(film_id) as number_of_films,
+ sum(length) as total_minutes,
+ avg(length) as avg_of_minutes,
+ min(length) as lowest_of_minutes,
+ max(length) as max_of_minutes
+ from film
+ group by rating;
+
+
 SELECT cust_state,
        SUM (order_total) AS sum_of_order,
        COUNT (*) AS order_total,
